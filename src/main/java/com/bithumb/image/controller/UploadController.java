@@ -4,6 +4,7 @@ import com.bithumb.image.common.response.ApiResponse;
 import com.bithumb.image.common.response.StatusCode;
 import com.bithumb.image.common.response.SuccessCode;
 import com.bithumb.image.service.S3Uploader;
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-
+@Api(tags = {"Image Uploader"})
 @RequiredArgsConstructor
 @RestController
 @CrossOrigin(origins="*", allowCredentials = "false")
